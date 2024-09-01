@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+header figure img {
+  width: 8rem;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  list-style: none;
+  margin-left: 2rem;
+}
+header ul li a {
+  text-decoration: none;
+  color: hsl(238, 22%, 44%);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+main {
+  font-family: "Open Sans", sans-serif;
+}
+main .seccion_uno {
+  margin-top: 4rem;
+  padding: 2rem;
+}
+main .seccion_uno figure {
+  margin-bottom: 3rem;
+}
+main .seccion_uno figure img {
+  width: 100%;
+}
+main .seccion_uno h1 {
+  font-size: 2.7rem;
+  color: hsl(243, 87%, 12%);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+main .seccion_uno p {
+  font-size: 1.6rem;
+  color: hsl(238, 22%, 44%);
+  text-align: center;
+}
+main .seccion_uno input {
+  width: 100%;
+  padding: 1.3rem 1.5rem 1rem 1.5rem;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: hsl(224, 93%, 58%);
+  margin-bottom: 2rem;
+}
+main .seccion_uno button {
+  width: 100%;
+  padding: 1.3rem;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+main .seccion_uno button:hover {
+  cursor: pointer;
+  background-color: rgb(111, 174, 255);
+}
+main .seccion_dos {
+  margin-top: 8rem;
+  background-image: url("../Image/bg-curve-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  position: relative;
+  padding: 0rem 2.5rem;
+}
+main .seccion_dos figure {
+  padding-top: 10rem;
+}
+main .seccion_dos figure img {
+  width: 100%;
+}
+main .seccion_dos h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+main .seccion_dos p {
+  font-size: 1.4rem;
+  color: hsl(238, 22%, 44%);
+  margin-bottom: 1.6rem;
+}
+main .seccion_dos .seccion_dos__boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .seccion_dos .seccion_dos__boton .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .seccion_dos .seccion_dos__boton .contenedor .letras-verde {
+  color: hsl(170, 45%, 43%);
+  margin: 0;
+  margin-right: 1rem;
+}
+main .seccion_dos .seccion_dos__boton .contenedor figure {
+  padding: 0;
+  margin: 0;
+}
+main .seccion_dos .seccion_dos__boton .contenedor figure img {
+  width: 100%;
+}
+main .seccion_dos .seccion_dos__boton hr {
+  background-color: hsl(170, 45%, 43%); /* Mismo color que el texto */
+  border: none;
+  width: 16rem;
+}
+main .seccion_cuadro {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  margin: 8rem auto;
+  box-shadow: 0px 0px 15px -10px hsl(243, 87%, 12%);
+}
+main .seccion_cuadro p {
+  font-size: 1.18rem;
+  color: hsl(238, 22%, 44%);
+  margin-bottom: 1.6rem;
+  line-height: 2rem;
+}
+main .seccion_cuadro .logo {
+  display: flex;
+}
+main .seccion_cuadro .logo img {
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+main .seccion_cuadro .logo figcaption p {
+  margin: 0;
+  line-height: normal;
+}
+main .seccion_cuadro .logo figcaption .logo__nombre {
+  font-weight: 700;
+  color: hsl(243, 87%, 12%);
+}
+main .seccion_cuadro .logo figcaption .logo__cargo {
+  font-size: 1rem;
+  color: hsl(238, 22%, 44%);
+}
+main .seccion_final {
+  background-color: hsl(238, 22%, 44%);
+  padding: 7rem 4rem;
+}
+main .seccion_final h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+main .seccion_final p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 3rem;
+}
+main .seccion_final .seccion_final__envio {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 25rem;
+}
+main .seccion_final .seccion_final__envio input {
+  border-radius: 0.3rem;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 1.3rem;
+  color: hsl(238, 22%, 44%);
+  font-size: 1rem;
+}
+main .seccion_final .seccion_final__envio button {
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1.3rem;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  padding: 6rem 4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+footer figure img {
+  width: 15rem;
+  filter: invert(1) brightness(100);
+}
+footer ul li {
+  list-style: none;
+  margin: 1rem 0;
+  font-weight: lighter;
+  font-size: 1.3rem;
+}
+footer ul li img {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+footer .informacion {
+  border-top: 3rem solid transparent;
+}
+footer .redes_sociales {
+  color: white;
+  text-align: center;
+  margin: 5rem 0;
+}
+footer .redes_sociales i {
+  margin: 0 0.5rem;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1350px) {
+  header {
+    padding: 3rem 8rem;
+  }
+  main .seccion_uno {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem 8rem;
+  }
+  main .seccion_uno figure {
+    width: 50%;
+  }
+  main .seccion_uno div {
+    margin-top: 3rem;
+    width: 50%;
+    margin-right: 5rem;
+  }
+  main .seccion_uno div h1 {
+    text-align: left;
+    font-size: 3rem;
+  }
+  main .seccion_uno div p {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  main .seccion_uno div .seccion_uno__busqueda {
+    display: flex;
+    width: 95%;
+  }
+  main .seccion_uno div .seccion_uno__busqueda div {
+    margin: 0;
+    width: 100%;
+    margin-right: 4rem;
+  }
+  main .seccion_uno div .seccion_uno__busqueda div input {
+    width: 100%;
+    margin: 0;
+  }
+  main .seccion_uno div .seccion_uno__busqueda button {
+    width: 40%;
+    font-size: 1.2rem;
+    height: 4.3rem;
+  }
+  main .seccion_dos {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10rem;
+    background-image: url("../Image/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 20rem 5rem 10rem 5rem;
+  }
+  main .seccion_dos figure {
+    padding: 0;
+    width: 40%;
+  }
+  main .seccion_dos div {
+    width: 60%;
+  }
+  main .seccion_dos div h2 {
+    font-size: 4rem;
+    text-align: left;
+  }
+  main .seccion_dos div p {
+    font-size: 1.6rem;
+    width: 53rem;
+  }
+  main .seccion_dos div .seccion_dos__boton {
+    align-items: start;
+  }
+  main .seccion_dos div .seccion_dos__boton .contenedor {
+    justify-content: start;
+  }
+  main .seccion_dos div .seccion_dos__boton .contenedor .letras-verde {
+    font-size: 2rem;
+    width: auto;
+  }
+  main .seccion_dos div .seccion_dos__boton .contenedor figure {
+    width: 3rem;
+  }
+  main .seccion_dos div .seccion_dos__boton hr {
+    width: 22rem;
+  }
+  main .seccion_cuadro {
+    margin: 0;
+    position: relative;
+    background-color: none;
+    width: 0;
+    margin: none;
+    padding: 0;
+    margin-left: 5rem;
+  }
+  main .seccion_cuadro div {
+    position: absolute;
+    transform: translate(0, -30rem);
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    width: 38rem;
+    margin: 8rem auto;
+    box-shadow: 0px 0px 15px -10px hsl(243, 87%, 12%);
+  }
+  main .seccion_cuadro div p {
+    font-size: 1.6rem;
+  }
+  main .seccion_final {
+    display: flex;
+  }
+  main .seccion_final div {
+    width: 50%;
+    padding: 0 5rem;
+  }
+  main .seccion_final .seccion_final__letras h2 {
+    font-size: 3.4rem;
+    text-align: left;
+  }
+  main .seccion_final .seccion_final__letras p {
+    font-size: 1.8rem;
+    text-align: left;
+    width: 90%;
+  }
+  main .seccion_final .seccion_final__envio {
+    width: 40%;
+    padding-top: 3rem;
+  }
+  main .seccion_final .seccion_final__envio input {
+    width: 100%;
+  }
+  main .seccion_final .seccion_final__envio button {
+    margin-top: 1.5rem;
+    width: 35%;
+    font-size: 1.25rem;
+  }
+  main .seccion_final .seccion_final__envio button:hover {
+    cursor: pointer;
+    background-color: rgb(111, 174, 255);
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr 3.5rem;
+  }
+  footer figure {
+    grid-column: 1/5;
+    margin-bottom: 4rem;
+  }
+  footer ul li {
+    font-size: 1.8rem;
+  }
+  footer .informacion {
+    border-top: 0;
+  }
+  footer .redes_sociales i {
+    font-size: 3rem;
+  }
+  footer .redes_sociales i:hover {
+    cursor: pointer;
+    color: hsl(170, 45%, 43%);
+  }
+  footer .attribution {
+    grid-column: 1/5;
+    font-size: 1.8rem;
+    grid-row: center;
+  }
+}/*# sourceMappingURL=style.css.map */
